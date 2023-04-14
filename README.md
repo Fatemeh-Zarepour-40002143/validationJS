@@ -15,20 +15,20 @@ This is a simple registration form with email, password, and phone number fields
 
 To use this registration form, simply open the `index.html` file in a web browser. The form can be filled out and submitted by clicking the "Register" button. If any fields are invalid, an error message will be displayed below the field and the field border will turn red. If all fields are valid, the field border will turn green and the form can be submitted.
 
-## Code
+# Code
 
-### HTML
+## HTML
 
 The HTML code for the registration form is contained in the `index.html` file. It consists of a `form` element with input fields for email, password, and phone number, as well as a submit button. Each input field has an associated label element and an error message span element that is initially empty.
 
-### JavaScript
+## JavaScript
 
 The JavaScript code for the registration form is contained in the `script.js` file. It adds event listeners to the input fields for email, password, and phone number, and validates the input using regular expressions. It also can be personolized by a variable named securityLevel that if it's on easy then your password only should be more than 8 characters long,if it's medium the password should contain digit and if it's hard password should have at least a capital,a number and a special character. If any fields are invalid, the associated error message span is updated with an appropriate error message. If all fields are valid, the form submission is allowed.
-####validate Email
+###validate Email
 by checking that the form of text is like a@b.c and each one of a,b and c don't contain '@' by regex then if it's a valid email make the border of field green otherwise make it red
-####validate phoneNumber 
+###validate phoneNumber 
 by checking that the field contain 11 digits of number that starts with 09 then if it's valid return true and make the border of field green otherwise make it red
-####validate password
+###validate password
 this function include 4 function.first of all it checks that the password is at least 8 characters long and if it is add 1 to the strength variable.second one is checking that the password contain digits.third one is checking the password contain any capital characters and the last one check that password contain at least 1 special character and add 1 to strength variable if each one this being true.
 
 ## License
