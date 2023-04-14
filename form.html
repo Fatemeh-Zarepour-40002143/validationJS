@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Form</title>
+    <style>
+      input {
+        margin: 10px;
+        display: block;
+        border: 2px solid #ddd;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      input[type="password"] {
+        position: relative;
+      }
+      #password-strength {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-color: #ddd;
+      }
+      #password-strength-fill {
+        height: 1rem;
+        width: 100%;
+        background-color: green;
+      }
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      .valid {
+        border-color: green;
+      }
+      .invalid {
+        border-color: red;
+      }
+      .weak {
+        border-color: rgb(118, 2, 2);
+      }
+      .medium {
+        border-color: rgb(251, 213, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <span id="email-error" class="error"></span>
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+      <div id="password-strength">
+        <div id="password-strength-fill"></div>
+      </div>
+      <span id="password-error" class="error"></span>
+      <br />
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required />
+      <span id="phone-error" class="error"></span>
+      <br />
+      <button type="submit">Register</button>
+    </form>
+    <script type="text/javascript" src="validation.js"></script>
+  </body>
+</html>
